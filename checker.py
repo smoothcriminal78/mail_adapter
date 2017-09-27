@@ -60,8 +60,6 @@ def process_mailbox(M):
             # fp.close
 
             attach = part.get_payload(decode=1)
-            print('-' * 100)
-            print(attach)
             xls_parser.parse(attach)
 
 
